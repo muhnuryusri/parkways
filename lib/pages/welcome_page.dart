@@ -13,7 +13,7 @@ class WelcomePage extends StatefulWidget {
 }
 
 class _WelcomePageState extends State<WelcomePage> {
-  late final String username;
+  String? username;
 
   final _auth = FirebaseAuth.instance;
   final _database = FirebaseDatabase.instance.ref();
@@ -71,7 +71,7 @@ class _WelcomePageState extends State<WelcomePage> {
               const Text(
                 'Parkways menghadirkan solusi parkir dengan investment yang rendah dan dilengkapi berbagai fitur berikut.',
                 style: TextStyle(
-                  fontSize: 11,
+                  fontSize: 12,
                   fontWeight: FontWeight.w400,
                 ),
               ),
